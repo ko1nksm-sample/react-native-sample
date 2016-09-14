@@ -27,7 +27,9 @@ export default class Menu extends Component {
         <TouchableHighlight style={styles.highlight} onPress={() => this.goto("MyScene")} underlayColor="pink">
           <Text style={styles.text}>MyScene</Text>
         </TouchableHighlight>
-        <Text style={styles.text}>page 02</Text>
+        <TouchableHighlight style={styles.highlight} onPress={() => this.goto("MyCamera")} underlayColor="pink">
+          <Text style={styles.text}>MyCamera</Text>
+        </TouchableHighlight>
         <Text style={styles.text}>page 03</Text>
         <Text style={styles.text}>page 04</Text>
         <Text style={styles.text}>page 05</Text>

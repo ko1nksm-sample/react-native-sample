@@ -2,6 +2,7 @@ import React, { Component, PropTypes } from 'react';
 import{ Navigator, Text } from 'react-native'
 import Menu from './Menu';
 import MyScene from './MyScene';
+import MyCamera from './MyCamera';
 
 export default class App extends Component {
   render() {
@@ -20,6 +21,10 @@ export default class App extends Component {
 
     if (route.name === 'MyScene') {
       return <MyScene />
+    }
+
+    if (route.name === 'MyCamera') {
+      return <MyCamera />
     }
 
     return <Text>unknown page</Text>
